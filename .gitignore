@@ -1,12 +1,538 @@
-*.class
+import java.util.*;
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+class caby1
+{
+    public static void main()
+    {
+        Scanner sc = new Scanner (System.in);
 
-# Package Files #
-*.jar
-*.war
-*.ear
+        System.out.println("@           @ @@@@@    @      @@@@@   @@@@@@   @     @   @@@@@");
+        System.out.println(" @         @  @        @      @       @    @   @ @ @ @   @");
+        System.out.println("  @   @   @   @@@@@    @      @       @    @   @  @  @   @@@@@");
+        System.out.println("   @ @ @ @    @        @      @       @    @   @     @   @");
+        System.out.println("    @   @     @@@@@    @@@@@  @@@@@   @@@@@@   @     @   @@@@@");
+        int amount;  //bill
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+        String name; //name
+        String phone;//phone 
+        int condi;//phone length
+        int loc;//location input
+        String location;//locations
+        String desti;
+        int choice;//loc 
+        int choicei;//desti
+        int choicec;//car
+        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println("Enter your name");
+        name=sc.nextLine();
+        System.out.println("Enter your phone number");
+        do
+        {
+            phone=sc.nextLine();
+            condi = phone.length();
+            if(condi!=10)
+                System.out.println("Sorry its an invalid number");
+            System.out.println("Enter your phone number");
+        }
+        while(condi!=10);
+        System.out.println("------------------------------------------------------------------------------------------------");
+        System.out.println("Enter Your location");
+        System.out.println("1.Borivali");
+        System.out.println("2.Kandivali");
+        System.out.println("3.Malad");
+        System.out.println("4.Goregoan");
+        System.out.println("5.Jogeshwari");
+        System.out.println("6.Andheri");
+        System.out.println("7.Parle");
+
+        loc = sc.nextInt();
+        System.out.println("------------------------------------------------------------------------------------------------");
+        switch(loc)
+        {
+            case 1: location = "Borivali";
+            System.out.println("Enter ur destination");
+            System.out.println("1.Kandivali");
+            System.out.println("2.Malad");
+            System.out.println("3.Goregoan");
+            System.out.println("4.Jogehwari");
+            System.out.println("5.Andheri");
+            System.out.println("6.Parle");
+            choicei=sc.nextInt();
+
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Borivali");
+            if(choicei==1)
+            {desti="Kandivali";System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Malad";System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Goregoan";System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Jogeshwari";System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Andheri";System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Parle";System.out.println("You want to go to"+desti);}
+
+            if(choicei==1 && choicec==1)
+            {amount=100;
+                if(choicei==1 && choicec==1)
+                {amount=100; System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==2 && choicec==1)
+                {amount=200;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==3 && choicec==1)
+                {amount=300;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==4 && choicec==1)
+                {amount=400;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==5 && choicec==1)
+                {amount=500;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==6 && choicec==1)
+                {amount=600;System.out.print("Estimated amount:"+amount);}
+
+                if(choicei==1 && choicec==2)
+                {amount=200;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==2 && choicec==2)
+                {amount=300;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==3 && choicec==2)
+                {amount=400;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==4 && choicec==2)
+                {amount=500;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==5 && choicec==2)
+                {amount=600;System.out.print("Estimated amount:"+amount);}
+
+                else if(choicei==6 && choicec==2)
+                {amount=700;System.out.print("Estimated amount:"+amount);}
+            }
+            break;
+            case 2:
+            location ="Kandivali";
+            System.out.println("Enter ur destination");
+            System.out.println("1.Borivali");
+            System.out.println("2.Malad");
+            System.out.println("3.Goregoan");
+            System.out.println("4.Jogeshwari");
+            System.out.println("5.Andheri");
+            System.out.println("6.Parle");
+            choicei=sc.nextInt();
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Kandivali");
+            if(choicei==1)
+            {desti="Borivali";System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Malad";System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Goregoan";System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Jogeshwari";System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Andheri";System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Parle";System.out.println("You want to go to"+desti);}
+
+            if(choicei==1 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==1)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==1)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+
+            if(choicei==1 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==2)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==2)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==2)
+            {amount=600;System.out.print("Estimated amount:"+amount);}
+            break;
+            case 3:
+            location = "Malad";
+            System.out.println("Enter ur destination");
+            System.out.println("1.Borivali");
+            System.out.println("2.Kandivali");
+            System.out.println("3.Goregoan");
+            System.out.println("4.Jogeshwari");
+            System.out.println("5.Andheri");
+            System.out.println("6.Parle");
+            choicei=sc.nextInt();
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Malad");
+            if(choicei==1)
+            {desti="Borivali";System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Kandivali";System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Goregoan";System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Jogeshwari";System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Andheri";System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Parle";System.out.println("You want to go to"+desti);}
+
+            if(choicei==1 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==1)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            if(choicei==1 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==2)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==2)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+            break;
+            case 4:
+            location = "Goregoan";
+            System.out.println("Enter ur destination");
+            System.out.println("1.Borivali");
+            System.out.println("2.Kandivali");
+            System.out.println("3.Malad");
+            System.out.println("4.Jogeshwari");
+            System.out.println("5.Andheri");
+            System.out.println("6.Parle");
+            choicei=sc.nextInt();
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Goregoan");
+
+            if(choicei==1)
+            {desti="Borivali";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Kandivali";                 System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Malad";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Jogeshwari";                System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Andheri";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Parle";                 System.out.println("You want to go to"+desti);}
+
+            if(choicei==1 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            if(choicei==1 && choicec==2)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+            break;
+            case 5:
+            location = "Jogeshwari";
+            System.out.println("Enter ur destination");
+            System.out.println("1.Borivali");
+            System.out.println("2.Kandivali");
+            System.out.println("3.Malad");
+            System.out.println("4.Goregoan");
+            System.out.println("5.Andheri");
+            System.out.println("6.Parle");
+            choicei=sc.nextInt();
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Jogeshwari");
+
+            if(choicei==1)
+            {desti="Borivali";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Kandivali";                 System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Malad";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Goregoan";                System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Andheri";                System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Parle";               System.out.println("You want to go to"+desti);}
+
+            if(choicei==1 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==1)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==1)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+
+            if(choicei==1 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==2)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==2)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==2)
+            {amount=600;System.out.print("Estimated amount:"+amount);}
+            break;
+            case 6:
+            location = "Andheri";
+            System.out.println("Enter ur destination");
+            System.out.println("1.Borivali");
+            System.out.println("2.Kandivali");
+            System.out.println("3.Malad");
+            System.out.println("4.Goregoan");
+            System.out.println("5.Jogeshwari");
+            System.out.println("6.Parle");
+            choicei=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Andheri");
+
+            if(choicei==1)
+            {desti="Borivali";                System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Kandivali";                 System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Malad";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Goregoan";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Jogeshwari";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Parle";                 System.out.println("You want to go to"+desti);}
+
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+
+            if(choicei==1 && choicec==1)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            if(choicei==1 && choicec==2)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==2)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==2)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+            break;
+            case 7:
+            location = "Parle";   
+            System.out.println("Enter ur destination");
+            System.out.println("1.Borivali");
+            System.out.println("2.Kandivali");
+            System.out.println("3.Malad");
+            System.out.println("4.Goregoan");
+            System.out.println("5.Jogeshwari");
+            System.out.println("6.Andheri");
+            choicei=sc.nextInt();
+            System.out.println("Enter car type:");
+            System.out.println("1.Seedan");
+            System.out.println("2.SUV");
+            choicec=sc.nextInt();
+            System.out.println("------------------------------------------------------------------------------------------------");
+            System.out.println("Hello"+name);
+            System.out.println("Your phone number"+phone);
+            System.out.println("Your are at Parle");
+
+            if(choicei==1)
+            {desti="Borivali";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==2)
+            {desti="Kandivali";                 System.out.println("You want to go to"+desti);}
+            else if (choicei==3)
+            {desti="Malad";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==4)
+            {desti="Goregoan";                System.out.println("You want to go to"+desti);}
+            else if(choicei==5)
+            {desti="Jogeshwari";                 System.out.println("You want to go to"+desti);}
+            else if(choicei==6)
+            {desti="Andheri";                 System.out.println("You want to go to"+desti);}
+
+            if(choicei==1 && choicec==1)
+            {amount=600;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==1)
+            {amount=500;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=400;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==4 && choicec==1)
+            {amount=300;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==5 && choicec==1)
+            {amount=200;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==6 && choicec==1)
+            {amount=100;System.out.print("Estimated amount:"+amount);}
+
+            if(choicei==1 && choicec==2)
+            {amount=700;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==2 && choicec==2)
+            {amount=600;System.out.print("Estimated amount:"+amount);}
+
+            else if(choicei==3 && choicec==1)
+            {amount=500;System.out.print("Estimated amount:"+amount);
+            }
+
+            else if(choicei==4 && choicec==2)
+            {amount=400;System.out.print("Estimated amount:"+amount);
+            }
+
+            else if(choicei==5 && choicec==2)
+            {amount=300;System.out.print("Estimated amount:"+amount);
+            }
+
+            else if(choicei==6 && choicec==2)
+            {amount=200;
+                System.out.print("Estimated amount:"+amount);}
+        }
+    }
+}
+
+        
+
+        
